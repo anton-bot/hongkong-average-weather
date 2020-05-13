@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.scss';
-import { WeatherJson } from './components/WeatherJson';
+import { AverageWeather } from './components/AverageWeather/AverageWeather';
 
 function App() {
   return (
     <div className="App">
       <h1>Hong Kong Weather</h1>
-      <WeatherJson />
+      <AverageWeather />
     </div>
   );
 }
