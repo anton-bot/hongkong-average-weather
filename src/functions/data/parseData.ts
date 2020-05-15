@@ -1,6 +1,6 @@
 import moment from 'moment';
-import weather from '../data/weather.json';
-import { WeatherDay } from '../types/WeatherDay';
+import weather from '../../data/weather.json';
+import { WeatherDay } from '../../types/WeatherDay';
 
 const LEAP_YEAR = '2000';
 
