@@ -1,12 +1,12 @@
-export type AverageWeatherResponse = {
-  maxHumidity: string;
-  maxTemperature: string;
-  minHumidity: string;
-  minTemperature: string;
+export type AverageWeatherDataItem = {
+  maxHumidity: number;
+  maxTemperature: number;
+  minHumidity: number;
+  minTemperature: number;
   radiationKatO: string;
   radiationPingChau: string;
   radiationTsimBeiTsui: string;
-  rainfall: string;
+  rainfall: number;
   runningAverageRainfall: string;
   sunshineHours: string;
   totalRainfall: string;

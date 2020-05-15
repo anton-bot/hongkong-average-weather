@@ -1,6 +1,6 @@
-import { AverageWeatherResponse } from './AverageWeatherResponse';
+import { AverageWeatherDataItem } from './AverageWeatherDataItem';
 
-export type WeatherDay = AverageWeatherResponse & {
+export type WeatherDay = AverageWeatherDataItem & {
   dayOfYear: number;
   date: Date;
 };

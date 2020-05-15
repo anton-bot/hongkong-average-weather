@@ -8,6 +8,7 @@ import { scaleLinear, scaleTime } from 'd3-scale';
 import { getRainfallDataPoint } from '../../functions/data/getRainfallDataPoint';
 import { RainfallChart } from '../RainfallChart/RainfallChart';
 import { formatDate } from '../../functions/ui/formatDate';
+import { THREE_DAY_AVERAGES } from '../../constants';
 
 type Props = {};
 type State = {
@@ -16,7 +17,7 @@ type State = {
 
 export class AverageWeather extends React.PureComponent<Props, State> {
   state: State = {
-    data: parseData(),
+    data: parseData(THREE_DAY_AVERAGES),
   };
 
   render() {
