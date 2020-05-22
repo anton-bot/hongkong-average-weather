@@ -7,6 +7,8 @@ import { RainfallChart } from '../RainfallChart/RainfallChart';
 import { THREE_DAY_AVERAGES } from '../../constants';
 import { TemperatureChart } from '../TemperatureChart/TemperatureChart';
 import { getTemperatureDataPoint } from '../../functions/data/getTemperatureDataPoint';
+import { HumidityChart } from '../HumidityChart/HumidityChart';
+import { getHumidityDataPoint } from '../../functions/data/getHumidityDataPoint';
 
 type Props = {};
 type State = {
@@ -23,10 +25,12 @@ export class AverageWeather extends React.PureComponent<Props, State> {
       <div className="AverageWeather">
         <TemperatureChart data={this.getTemperatureData()} />
         <RainfallChart data={this.getRainData()} />
+        <HumidityChart data={this.getHumidityData()} />
       </div>
     );
   }
 
   getTemperatureData = () => this.state.data.map(getTemperatureDataPoint);
   getRainData = () => this.state.data.map(getRainfallDataPoint);
+  getHumidityData = () => this.state.data.map(getHumidityDataPoint);
 }
