@@ -8,12 +8,12 @@ export function drawTransparentDataPoint<T>(
   index: number,
 ) {
   return <Circle
-    x={(props.x || 0) - DATA_POINT_DIAMETER / 2}
-    y={(props.y || 0) - DATA_POINT_DIAMETER / 2}
+    x={props.x || 0}
+    y={props.y || 0}
     diameter={DATA_POINT_DIAMETER}
-    opacity={0.01}
+    opacity={0.001}
     options={{
-      fill: 'transparent',
+      fill: 'trasparent',
     }}
   />;
 }

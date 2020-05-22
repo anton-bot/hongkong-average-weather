@@ -6,4 +6,4 @@ export const CHART_DATE_RANGE = [
 export const CHART_HEIGHT_PX = 500;
 
 // hovering over data point produces a tooltip, so it should be large enough:
-export const DATA_POINT_DIAMETER = 15;
+export const DATA_POINT_DIAMETER = 25;

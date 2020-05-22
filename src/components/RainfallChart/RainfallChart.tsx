@@ -14,7 +14,7 @@ type Props = {
 const X_SCALE = scaleTime().domain(CHART_DATE_RANGE);
 const Y_SCALE = scaleLinear().domain([0, 35]);
 
-const X_TICK_COUNT = 6;
+const X_TICK_COUNT = 12;
 const Y_TICK_COUNT = 10;
 
 const CHART_FILL_STYLE = 'cross-hatch';
