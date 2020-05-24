@@ -6,6 +6,7 @@ import { CHART_DATE_RANGE, CHART_HEIGHT_PX } from '../../config/charts';
 import { HumidityDataPoint } from '../../types/HumidityDataPoint';
 import { drawTransparentDataPoint } from '../../functions/charts/drawTransparentDataPoint';
 import { colors } from '../../config/colors';
+import { RoughHeader } from '../RoughHeader/RoughHeader';
 
 type Props = {
   data: HumidityDataPoint[];
@@ -21,6 +22,9 @@ export class HumidityChart extends React.PureComponent<Props> {
   render() {
     return (
       <div className="HumidityChart">
+        <RoughHeader>
+          Humidity
+        </RoughHeader>
         <ChartProvider
           xScale={X_SCALE}
           yScale={Y_SCALE}
