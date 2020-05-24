@@ -14,8 +14,8 @@ export class RoughHeader extends React.PureComponent {
           <RoughProvider>
             <Line
               x1={0}
-              x2={100}
-              y1={20}
+              x2={120}
+              y1={5}
               y2={0}
             />
           </RoughProvider>
