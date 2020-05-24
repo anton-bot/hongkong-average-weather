@@ -6,6 +6,7 @@ import { colors } from '../../config/colors';
 import { drawTransparentDataPoint } from '../../functions/charts/drawTransparentDataPoint';
 import { formatDate } from '../../functions/ui/formatDate';
 import { RainfallDataPoint } from '../../types/RainfallDataPoint';
+import { RoughHeader } from '../RoughHeader/RoughHeader';
 
 type Props = {
   data: RainfallDataPoint[];
@@ -28,6 +29,9 @@ export class RainfallChart extends React.PureComponent<Props> {
   render() {
     return (
       <div className="RainfallChart">
+        <RoughHeader>
+          Rain
+        </RoughHeader>
         <ChartProvider
           xScale={X_SCALE}
           yScale={Y_SCALE}

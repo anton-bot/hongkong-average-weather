@@ -1,0 +1,10 @@
+.RoughHeader {
+  text-align: center;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+
+  svg {
+    align-self: center;
+  }
+}

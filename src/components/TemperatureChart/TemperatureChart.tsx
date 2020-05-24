@@ -6,6 +6,7 @@ import { CHART_DATE_RANGE, CHART_HEIGHT_PX } from '../../config/charts';
 import { TemperatureDataPoint } from '../../types/TemperatureDataPoint';
 import { drawTransparentDataPoint } from '../../functions/charts/drawTransparentDataPoint';
 import { colors } from '../../config/colors';
+import { RoughHeader } from '../RoughHeader/RoughHeader';
 
 type Props = {
   data: TemperatureDataPoint[];
@@ -21,6 +22,9 @@ export class TemperatureChart extends React.PureComponent<Props> {
   render() {
     return (
       <div className="TemperatureChart">
+        <RoughHeader>
+          Air Temperature
+        </RoughHeader>
         <ChartProvider
           xScale={X_SCALE}
           yScale={Y_SCALE}
